@@ -1,3 +1,17 @@
+# NOTE
+### Intended for Apple Silicon users only. The CMDSTANPY backend is required.
+
+On ARM you'll need to build cmdstan from source prior to installing prophet from this branch.
+
+You can install prophet from this branch using pip like:
+```bash
+export CMDSTAN=path/to/cmdstan-{version}
+export STAN_BACKEND=CMDSTANPY
+pip install -e "git+https://github.com/wsp-digital/prophet.git@apple-silicon#egg=prophet&subdirectory=python"
+```
+
+------
+
 # Prophet: Automatic Forecasting Procedure
 
 ![Build](https://github.com/facebook/prophet/workflows/Build/badge.svg)
